@@ -62,6 +62,12 @@
         <activity android:name=".atys.OrderActivity"/>
         <activity android:name=".atys.SettingActivity"/>
         <activity android:name=".atys.CashAccountActivity"/>
+        <activity
+            android:name=".atys.DateSelectActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme ="@style/Translucent_NoTitle">
+        </activity>
         <activity android:name="com.fangdichan.house.zxing.atys.ScanQrCodeActivity"/>
 
     </application>

@@ -22,12 +22,14 @@ import com.fangdichan.house.Net.NetCore;
 import com.fangdichan.house.R;
 import com.fangdichan.house.entity.HouseInfo;
 import com.fangdichan.house.entity.HouseListInfo;
+import com.fangdichan.house.utils.DateUtils;
 import com.fangdichan.house.utils.ImageLoader;
 import com.fangdichan.house.zxing.atys.ScanQrCodeActivity;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
 import java.lang.reflect.Field;
+import java.util.Date;
 import java.util.List;
 
 
@@ -41,6 +43,8 @@ public class HouseDetailActivity extends ActionBarActivity {
     Context mContext;
 
     TextView statusBarView;
+
+    OrderDialog dialog;
 
     // 获取手机状态栏高度
     public int getStatusBarHeight() {
@@ -116,8 +120,8 @@ public class HouseDetailActivity extends ActionBarActivity {
         btn_order.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent =new Intent(HouseDetailActivity.this,OrderActivity.class);
-                startActivity(intent);
+                dialog=new OrderDialog(mContext,R.style.DialogTheme);
+                dialog.show();
             }
         });
 
@@ -192,6 +196,15 @@ public class HouseDetailActivity extends ActionBarActivity {
             msg.arg1 = 0;
             handler.sendMessage(msg);
         }
+    }
+
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        // TODO Auto-generated method stub
+        super.onActivityResult(requestCode, resultCode, data);
+        if(dialog!=null&&dialog.isShowing())
+        dialog.onActivityResult(requestCode, resultCode, data);
     }
 
 }
