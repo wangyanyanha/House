@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="54dp"
+        android:background="@color/orange">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:padding="13dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/icon_back" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="购房优惠二维码"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_edit_mar"
+                android:layout_width="240dp"
+                android:layout_height="240dp"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/tv_qr_code_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_margin="13dp"
+                android:text="房金卷：88688" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:textSize="16dp"
+                android:text="模式说明" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:textSize="14dp"
+                android:text="1，扫码下载App，并填写个人信息后，即成为房金时代会员。\n2，每名房金时代会员只限发展十名房金时代会员，发展十名房金时代会员（这里的十名会员是不是说购房的会员）后即成为钻石会员。\n3，每名钻石会员往下5级中，有任一单成交，则该钻石会员及此条线上的另（1~5）名会员，可自动在此拥有会员发展权限，可以在推广10人。" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,108 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/divider"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="54dp"
+        android:background="@color/orange">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:padding="13dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/icon_back" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="设置"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_layout"
+        android:layout_margin="12dp"
+        android:gravity="center">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_cash_account"
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_cash"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="15dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:id="@+id/iv_cash_account" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="金融账户"
+                android:textSize="16dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/iv_cash_account"
+                android:layout_toEndOf="@+id/iv_cash_account" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_setting"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="15dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:id="@+id/iv_about" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="关于"
+                android:textSize="16dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/iv_about"
+                android:layout_toEndOf="@+id/iv_about" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="34dp"
+        android:background="@drawable/bg_button"
+        android:text="退出登录"
+        android:textSize="18dp"
+        android:textColor="@color/white"/>
+
+
+</LinearLayout>

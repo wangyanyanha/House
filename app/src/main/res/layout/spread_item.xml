@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:orientation="horizontal"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/rl_spread"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <com.fangdichan.house.views.CircleImageView
+            android:id="@+id/iv_spread_head"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/pic_head"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/iv_spread_head"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/tv_spread_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="王大傻"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tv_spread_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="等级：一级"
+                android:textSize="16dp"
+                android:layout_marginTop="5dp" />
+            <TextView
+                android:id="@+id/tv_spread_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="电话：1234567890"
+                android:textSize="16dp"
+                android:layout_marginTop="5dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

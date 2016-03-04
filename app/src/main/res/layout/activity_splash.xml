@@ -1,0 +1,15 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context="com.fangdichan.app.SplashActivity">
+
+    <ImageView android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="30dp"
+                android:adjustViewBounds="true"
+               android:src="@drawable/pic_logo"
+                android:scaleType="fitXY"
+            />
+</RelativeLayout>

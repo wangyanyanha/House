@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">"美房"</string>
+    <string name="app_city">"美房 -济南"</string>
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="login">登陆</string>
+    <string name="register">注册</string>
+    <string name="describe">二房总价轻松拥有三房生活，阳台、露台可自由改造
+        客厅、卧室朝园林一字排开，足不出户便可私享自然
+        主卧景观双层挑高大露台，最大化您的生活享受
+        双卫生间设置，细节周到考量
+    </string>
+
+    <string name="describe1">
+        阳光城翡丽湾是一座经典的法兰西风情建筑，将优雅、浪漫和高贵的气质镌刻于生活。同时拥有2万平米的超大法式风情园林，匠心独运的六重景观，精心择选的植栽，普罗旺斯的的气息氤氲于生活的每个角落。翔安隧道口紧邻家园，8分钟通达万达商圈；拥揽城市干道，高崎机场、泉厦高速等立体化交通网环绕。
+        项目总工分为三个子地块开发，规划为高层和墅区产品。基本实现户户观海，以专属定制的品质空间，丰富的产品线，满足不同的需求，令湾海生活充满无限想象。
+    </string>
+    <string name="action_scan">扫一扫</string>
+
+    <string name="bt_wallet">我的金库</string>
+    <string name="bt_setting">账户设置</string>
+    <string name="bt_changepasswd">修改密码</string>
+    <string name="bt_yijian">意见反馈</string>
+    <string name="bt_help">使用帮助</string>
+    <string name="bt_intro">关于我们</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="code">二维码</string>
+    <string name="title_activity_house_detail">HouseDetailActivity</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>
